@@ -1,12 +1,66 @@
+{% comment %} 
+type 1:
+
 <!DOCTYPE html>
-<html lang="en">
+<html>
+    <head>
+        <!-- title is what shown up on the tab -->
+        <title>Hello World!</title>
+        <!-- link tab can only goes to the head -->
+        <!-- Use link tab to get css file to style this html file -->
+        <link rel="stylesheet" href="app.css">
+        <!-- script tab can go in either head or body; use it for javascript file-->
+        <!-- if we have the script tab in the head, it asks browswer to load the .js file
+            before rendering the body -->
+        <scirpt src="app,js"></script>
+    </head>
+
+    <!-- body is what shown up on the page/screen -->
+    <body>
+        <h1>Hello World!!!</h1>
+        <!-- if we have the script tab in the body, we will see html, css file appear first,
+            and then the JS comes in and attach it self to html -> (in general) best practice -->
+        <script src="app2.js"></script>
+    </body>
+
+
+</html> {% endcomment %}
+
+
+<!DOCTYPE html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <metal http-equic="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>My Blog</title>
 </head>
 <body>
-    <h1> Hello World </h>
+    <header>
+        <nav>Navbar</nav>
+    </header>
+    <main>
+        <article>
+            <!-- anchor tabs: links to pages; href: where we try to reference-->
+            <a href="https://google.com">Go to Google</a>
+            <!--open a new tab for a new page using "taget"_black" attribute-->
+            <a target="_blank" href="https://google.com">Go to Google</a>
+            <!-- ul stands for "unordered list; ol stands for "ordered list"; we can use <li> withn them-->
+            <ul>
+            <li>Step 1</li>
+            <li>Step 2</li>
+            <li>Step 3</li>
+            </ul>
+            <ol>
+            <li>Step 1</li>
+            <li>Step 2</li>
+            <li>Step 3</li>
+            </ol>
+            <h1>Header 1</h1>
+            <p>Blog article content...</p>
+            <p>Blog <span>inline element</span> article content...</p>
+        </article>
+        <section>
+            <div>Other Contents<div>
+        </section>
+    </main>
+    <footer>Footer</footer>
 </body>
-</html>
+<html>
